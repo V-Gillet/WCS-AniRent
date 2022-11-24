@@ -1,5 +1,29 @@
+{% extends "layout.html.twig" %}
+{% block title %}Panier
+{% endblock %}
+
 {% block content %}
+		{% include '/Components/_map.html.twig'%}
+
+		{{ totalPrice }}
+
+	<h1 class="h1 fw-bold text-center my-5 text-secondary">{{"Votre Panier :"|upper}}</h1>
+
+	<div class="container bg-white containerCart rounded">
+		<div class="row mx-2">
+			<div class="col-md-5 order-1 pb-3 fw-bold fs-3 text-center"><img src="/assets/images/lama.jpeg" class="rounded my-4 mx-1" alt="">
+				<div>Vitesse: 55 KM/H</div>
+				<div>Temps : 30 Heures</div>
+				<div>Prix : 3000 €</div>
+			</div>
+		</div>
+        <div class="row">
+        <div class="btn btn-lg btn-light btnCard text-secondary fw-bold text-center">Reservez moi</div>
+        </div>
+	</div>
+
+
 	{% include '/Components/_map.html.twig'%}
 
-	{{ totalPrice }}
+>>>>>>> f4f750dedfe7084cbc4dd1b872a9a309430ee7d8
 {% endblock %}
