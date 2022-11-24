@@ -48,7 +48,6 @@ class AnimalController extends AbstractController
 
         return $this->twig->render('Animal/listAnimals.html.twig', [
             'animals' => $animals,
-            'distance' => $distance,
         ]);
     }
 

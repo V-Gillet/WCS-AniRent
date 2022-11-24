@@ -18,6 +18,8 @@ class TravelController extends AbstractController
 
             $_SESSION['point1'] = $point1;
             $_SESSION['point2'] = $point2;
+
+            header('Location: /animaux');
         }
 
         return $this->twig->render('Travel/travel.html.twig');
