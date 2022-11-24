@@ -9,6 +9,6 @@ class CartController extends AbstractController
      */
     public function index(): string
     {
-        return $this->twig->render('Cart/index.html.twig');
+        return $this->twig->render('Cart/cart.html.twig');
     }
 }

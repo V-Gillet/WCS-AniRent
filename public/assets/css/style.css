@@ -70,9 +70,14 @@ h1, h2, h3, h4, h5, h6 {
   color: #FEFFC6 !important;
 }
 
-rowAnimal {
+.rowAnimal {
   max-width: 8rem;
   height: 100%;
+  background-color: #C6FFFC;
+}
+
+.rowAnimal:nth-child(odd) {
+  background-color: #FEFFC6;
 }
 
 .title {
@@ -88,6 +93,16 @@ rowAnimal {
 .border-nav img {
   width: 4rem;
   height: 4rem;
+}
+
+.containerCart {
+  height: 100%;
+  max-width: 140vh;
+}
+
+.btnCard:hover {
+  color: #F1F1F1 !important;
+  background-color: #FF6D99;
 }
 
 /*# sourceMappingURL=style.css.map */
