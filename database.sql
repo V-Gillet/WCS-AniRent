@@ -26,7 +26,7 @@ INSERT INTO animal (`name`, `image`)
 VALUES ('Snake', './assets/images/snake.jpeg');
 
 INSERT INTO animal (`name`, `image`)
-VALUES ('kangaroo', './assets/images/kangaroo.jpeg');
+VALUES ('Tree Kangaroo', './assets/images/kangaroo.jpeg');
 
 INSERT INTO animal (`name`, `image`)
 VALUES ('Squirrel', './assets/images/squirrel.jpeg');

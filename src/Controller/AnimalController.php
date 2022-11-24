@@ -15,7 +15,7 @@ class AnimalController extends AbstractController
         'Painted Turtle',
         'Giraffe',
         'Snake',
-        'kangaroo',
+        'Tree Kangaroo',
         'Squirrel',
     ];
     protected const FLYER = [

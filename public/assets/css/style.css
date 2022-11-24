@@ -159,12 +159,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .containerCart {
   height: 100%;
-  max-width: 140vh;
-}
+  max-width: 140vh; }
 
 .btnCard:hover {
   color: #F1F1F1 !important;
-  background-color: #FF6D99;
-}
+  background-color: #FF6D99; }
 
 /*# sourceMappingURL=style.css.map */
