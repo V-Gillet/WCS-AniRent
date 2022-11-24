@@ -28,7 +28,8 @@ class AnimalController extends AbstractController
     {
 
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-
+            $_SESSION['shopping-cart'] = [];
+            array_push($_SESSION['shopping-cart'], $_POST['price']);
 
             header('Location: /panier');
         }
