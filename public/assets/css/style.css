@@ -56,9 +56,15 @@ h1, h2, h3, h4, h5, h6 {
 .text-valid {
   color: #FEFFC6 !important; }
 
-rowAnimal {
+.rowAnimal {
   max-width: 8rem;
-  height: 100%; }
+  height: 100%;
+  background-color: #C6FFFC;
+}
+
+.rowAnimal:nth-child(odd) {
+  background-color: #FEFFC6;
+}
 
 .title {
   -webkit-text-stroke: 2px #FFE3E3;
@@ -95,5 +101,15 @@ rowAnimal {
     margin-bottom: -30rem; }
   .block-bg .head-fox {
     margin-bottom: -30rem; }
+
+.containerCart {
+  height: 100%;
+  max-width: 140vh;
+}
+
+.btnCard:hover {
+  color: #F1F1F1 !important;
+  background-color: #FF6D99;
+}
 
 /*# sourceMappingURL=style.css.map */
