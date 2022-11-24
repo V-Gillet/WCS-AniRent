@@ -1,72 +1,70 @@
+/* Fonts Faces */
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;800&family=Fredoka:wght@400;700&display=swap");
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 html {
-  scroll-behavior: smooth;
-}
+  scroll-behavior: smooth; }
 
 ul {
-  list-style: none;
-}
+  list-style: none; }
 
 a {
   text-decoration: none;
-  color: inherit;
-}
+  color: inherit; }
 
 body {
   width: 100vw;
   overflow-x: hidden;
-  font-family: Arial;
-}
+  font-family: "Fredoka", sans-serif, Arial; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #00c2dc;
-  font-family: Arial;
-}
+  color: #FFE3E3;
+  font-family: "Baloo Paaji 2", cursive, Arial; }
 
 .bg-primary {
-  background-color: #00c2dc;
-}
+  background-color: #FFE3E3 !important; }
 
 .bg-secondary {
-  background-color: #ffa718;
-}
+  background-color: #FF6D99 !important; }
 
 .bg-danger {
-  background-color: #ff4747;
-}
+  background-color: #C6FFFC !important; }
 
 .bg-valid {
-  background-color: #3cdd71;
-}
+  background-color: #FEFFC6 !important; }
 
 .text-light {
-  color: #F1F1F1;
-}
+  color: #F1F1F1 !important; }
 
 .text-dark {
-  color: #333;
-}
+  color: #333 !important; }
 
 .text-primary {
-  color: #00c2dc;
-}
+  color: #FFE3E3 !important; }
 
 .text-secondary {
-  color: #ffa718;
-}
+  color: #FF6D99 !important; }
 
 .text-danger {
-  color: #ff4747;
-}
+  color: #C6FFFC !important; }
 
 .text-valid {
-  color: #3cdd71;
-}
+  color: #FEFFC6 !important; }
+
+.title {
+  -webkit-text-stroke: 2px #FFE3E3;
+  height: 5rem;
+  font-size: 4rem;
+  text-shadow: 0 4px 4px rgba(51, 51, 51, 0.25); }
+
+.border-nav {
+  border-bottom-color: #FEFFC6 !important; }
+  .border-nav img {
+    width: 4rem;
+    height: 4rem; }
 
 rowAnimal {
   max-width: 8rem;
