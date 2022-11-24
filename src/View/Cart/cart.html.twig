@@ -3,6 +3,9 @@
 {% endblock %}
 
 {% block content %}
+		{% include '/Components/_map.html.twig'%}
+
+		{{ totalPrice }}
 
 	<h1 class="h1 fw-bold text-center my-5 text-secondary">{{"Votre Panier :"|upper}}</h1>
 
@@ -22,4 +25,5 @@
 
 	{% include '/Components/_map.html.twig'%}
 
+>>>>>>> f4f750dedfe7084cbc4dd1b872a9a309430ee7d8
 {% endblock %}
