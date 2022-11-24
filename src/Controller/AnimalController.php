@@ -9,6 +9,6 @@ class AnimalController extends AbstractController
      */
     public function index(): string
     {
-        return $this->twig->render('Animal/index.html.twig');
+        return $this->twig->render('Animal/listAnimals.html.twig');
     }
 }
