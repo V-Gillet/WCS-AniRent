@@ -1,0 +1,31 @@
+$primary: #00c2dc;
+$secondary: #ffa718;
+$light: #F1F1F1;
+$dark: #333;
+$danger: #ff4747;
+$valid: #3cdd71;
+
+$font-title: Arial;
+$font-subtitle: Arial;
+$font-body: Arial;
+
+%flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%pos-center{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+%flex-wrap{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+%flex-column{
+    display: flex;
+    flex-direction: column;
+}
