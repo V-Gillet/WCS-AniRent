@@ -15,4 +15,5 @@ return [
     'items/delete' => ['ItemController', 'delete',],
     'map' => ['MapController', 'index',],
     'travel' => ['TravelController', 'index',],
+    'animal' => ['AnimalController', 'index',],
 ];

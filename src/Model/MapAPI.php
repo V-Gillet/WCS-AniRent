@@ -6,7 +6,7 @@ use Symfony\Component\HttpClient\HttpClient;
 
 class MapAPI
 {
-    public function requestGeoStart($adress, $postCode)
+    public function requestGeoStart(string $adress, string $postCode): array
     {
         $client = HttpClient::create();
         $response = $client->request('GET', 'https://api-adresse.data.gouv.fr/search/?q=' . $adress . '&postcode=' . $postCode);
@@ -18,7 +18,7 @@ class MapAPI
         return $content;
     }
 
-    public function requestGeoEnd($adress, $postCode)
+    public function requestGeoEnd(string $adress, string $postCode): array
     {
 
         $client = HttpClient::create();

@@ -19,14 +19,12 @@ class TravelController extends AbstractController
 
             $_SESSION['point1'] = $point1;
             $_SESSION['point2'] = $point2;
-            var_dump($_SESSION);
-            exit();
         }
 
         return $this->twig->render('Travel/travel.html.twig');
     }
 
-    public function geoPoint($coordinatesStart): array
+    public function geoPoint(array $coordinatesStart): array
     {
 
         $point = [];
