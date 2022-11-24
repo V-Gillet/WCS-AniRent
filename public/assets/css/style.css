@@ -70,6 +70,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #FEFFC6 !important;
 }
 
+rowAnimal {
+  max-width: 8rem;
+  height: 100%;
+}
+
 .title {
   -webkit-text-stroke: 2px #FFE3E3;
   height: 5rem;
@@ -83,11 +88,6 @@ h1, h2, h3, h4, h5, h6 {
 .border-nav img {
   width: 4rem;
   height: 4rem;
-}
-
-rowAnimal {
-  max-width: 8rem;
-  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -13,4 +13,11 @@
 				<div class="col rounded-end bg-white m-1"></div>
 			</div>
 	</div>
+
+	{% for animal in animals %}
+
+    <span>{{ animal.name }}</span>
+    <span>{{ animal.characteristics }}</span>
+
+    {% endfor %}
 {% endblock %}
