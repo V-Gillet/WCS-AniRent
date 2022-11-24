@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Model\AnimalApi;
 use App\Model\DistanceAPI;
 
 class AnimalController extends AbstractController
@@ -22,10 +23,10 @@ class AnimalController extends AbstractController
         'Sea Eagle',
         'Snowy Owl',
     ];
-    
+
     public function index(): string
     {
-            $animals = $flyers = [];
+        $animals = $flyers = [];
         foreach (self::ANIMALS as $animal) {
             $allAnimals[] = $this->getAnimals($animal);
         }
@@ -39,7 +40,7 @@ class AnimalController extends AbstractController
             $flyers[] = $this->getCaracteristic($flyer);
         }
         $animals = array_merge($flyers, $animals);
-        
+
         $distanceAPI = new DistanceAPI();
         $distanceRequest = $distanceAPI->requestDistance();
         $distance = $distanceRequest['routes'][0]['legs'][0]['distance']['value'];
@@ -47,16 +48,15 @@ class AnimalController extends AbstractController
 
         return $this->twig->render('Animal/listAnimals.html.twig', [
             'animals' => $animals,
-            'distance' => $distance,
-            ]);
-        }
+        ]);
+    }
 
     public function getAnimals($animal)
     {
         $animalApiManager = new AnimalApi();
         return $animalApiManager->getAnimals($animal);
     }
-    
+
     public function getCaracteristic($animals)
     {
         $animalToRent = [];
