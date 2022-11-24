@@ -26,6 +26,13 @@ class AnimalController extends AbstractController
 
     public function index(): string
     {
+
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+
+            header('Location: /panier');
+        }
+
         $animals = $flyers = [];
 
         $distance = $this->getDistance();
@@ -67,6 +74,7 @@ class AnimalController extends AbstractController
                 $name = $animal['name'];
                 $characteristics = $this->mphToKmh((float)$animal['characteristics']['top_speed']);
                 $time = $this->calculateTime($distance, $characteristics);
+                $_SESSION['time'] = $time;
 
                 $animalToRent[] = [
                     'name' => $name,
