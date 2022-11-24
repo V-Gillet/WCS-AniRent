@@ -4,21 +4,17 @@
 {% endblock %}
 
 {% block content %}
+
 	<h1 class="h1 fw-bold text-center my-5 text-secondary">{{'Choisissez votre animal'|upper}}</h1>
 	<div class="container containerAnimal rounded pt-3 pb-5 bg-white">
+  
+  	{% for animal in animals %}
 			<div class="row mx-3 rowAnimal bg-danger rounded mt-3">
-				<div class="col d-flex"><img class="my-2 me-4 rounded" src="/assets/images/lama.jpeg" alt=""><div class="col align-self-center fw-bold display-4">LAMA</div></div>
+				<div class="col d-flex"><img class="my-2 me-4 rounded" src="/assets/images/lama.jpeg" alt=""><div class="col align-self-center fw-bold display-4">{{ animal.name|upper }}</div></div>
 				<div class="col flex-wrap mt-5 fw-bold fs-3 ms-5">VITESSE :<div class="mt-2">TEMPS :</div> <div class="mt-2">PRIX :</div></div>
-				<div class="col flex-wrap mt-5 fw-bold fs-3">50 KM/H <div class="mt-2">30 Heures</div> <div class="mt-2">3000 €</div></div>
+				<div class="col flex-wrap mt-5 fw-bold fs-3">{{ animal.characteristics }} KM/H <div class="mt-2">30 Heures</div> <div class="mt-2">3000 €</div></div>
 				<div class="col-2 rounded-end bg-white m-1"><div class="position-relative top-50 start-50 translate-middle fw-bold text-center fs-2">Ajouter</div></div>
 				<a href="#" class="stretched-link"></a>
 			</div>
-				<div class="row mx-3 rowAnimal bg-valid rounded mt-3">
-				<div class="col d-flex"><img class="my-2 me-4 rounded" src="/assets/images/lama.jpeg" alt=""><div class="col align-self-center fw-bold display-4">LAMA</div></div>
-				<div class="col flex-wrap mt-5 fw-bold fs-3 ms-5">VITESSE :<div class="mt-2">TEMPS :</div> <div class="mt-2">PRIX :</div></div>
-				<div class="col flex-wrap mt-5 fw-bold fs-3">50 KM/H <div class="mt-2">30 Heures</div> <div class="mt-2">3000 €</div></div>
-				<div class="col-2 rounded-end bg-white m-1"><div class="position-relative top-50 start-50 translate-middle fw-bold text-center fs-2">Ajouter</div></div>
-				<a href="#" class="stretched-link"></a>
-			</div>
-	</div>
+      {% endfor %}
 {% endblock %}
