@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Model\DistanceAPI;
 use Twig\Environment;
 use Twig\Extension\DebugExtension;
 use Twig\Loader\FilesystemLoader;
@@ -26,12 +27,20 @@ abstract class AbstractController
         );
         $this->twig->addExtension(new DebugExtension());
     }
-    public function mphToKmh($mph)
+    public function mphToKmh(float $mph)
     {
         return $mph * 1.60;
     }
+    public function getDistance()
+    {
+        $distanceAPI = new DistanceAPI();
+        $distanceRequest = $distanceAPI->requestDistance();
+        $distance = $distanceRequest['routes'][0]['legs'][0]['distance']['value'];
+        return round($distance / 1000);
+    }
     public function calculateTime($distance, $speed)
     {
-        return $distance / $speed;
+        $time = $distance / $speed;
+        return $time;
     }
 }
