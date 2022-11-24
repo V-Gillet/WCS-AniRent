@@ -1,63 +1,42 @@
--- phpMyAdmin SQL Dump
--- version 4.5.4.1deb2ubuntu2
--- http://www.phpmyadmin.net
---
--- Client :  localhost
--- Généré le :  Jeu 26 Octobre 2017 à 13:53
--- Version du serveur :  5.7.19-0ubuntu0.16.04.1
--- Version de PHP :  7.0.22-0ubuntu0.16.04.1
+CREATE TABLE animal (
+  `id` INT AUTO_INCREMENT PRIMARY KEY,
+  `name` VARCHAR(255) NOT NULL,
+  `image` TEXT NOT NULL
+);
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
+INSERT INTO animal(`name`, `image`)
+VALUES ('Camel Spider', './assets/images/spider.jpeg');
 
+INSERT INTO animal(`name`, `image`)
+VALUES ('Llama', './assets/images/lama.jpeg');
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+INSERT INTO animal (`name`, `image`)
+VALUES ('Prairie Dog', './assets/images/dog.jpeg');
 
---
--- Base de données :  `simple-mvc`
---
+INSERT INTO animal (`name`, `image`)
+VALUES ('Leopard Cat', './assets/images/cat.jpeg');
 
--- --------------------------------------------------------
+INSERT INTO animal (`name`, `image`)
+VALUES ('Painted Turtle', './assets/images/turtle.jpeg');
 
---
--- Structure de la table `item`
---
+INSERT INTO animal (`name`, `image`)
+VALUES ('Giraffe', './assets/images/giraffe.jpeg');
 
-CREATE TABLE `item` (
-  `id` int(11) UNSIGNED NOT NULL,
-  `title` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+INSERT INTO animal (`name`, `image`)
+VALUES ('Snake', './assets/images/snake.jpeg');
 
---
--- Contenu de la table `item`
---
+INSERT INTO animal (`name`, `image`)
+VALUES ('kangaroo', './assets/images/kangaroo.jpeg');
 
-INSERT INTO `item` (`id`, `title`) VALUES
-(1, 'Stuff'),
-(2, 'Doodads');
+INSERT INTO animal (`name`, `image`)
+VALUES ('Squirrel', './assets/images/squirrel.jpeg');
 
---
--- Index pour les tables exportées
---
+INSERT INTO animal (`name`, `image`)
+VALUES ('Mosquito', './assets/images/mosquito.jpeg');
 
---
--- Index pour la table `item`
---
-ALTER TABLE `item`
-  ADD PRIMARY KEY (`id`);
+INSERT INTO animal (`name`, `image`)
+VALUES ('Sea Eagle', './assets/images/eagle.jpeg');
 
---
--- AUTO_INCREMENT pour les tables exportées
---
+INSERT INTO animal (`name`, `image`)
+VALUES ('Snowy Owl', './assets/images/owl.jpeg');
 
---
--- AUTO_INCREMENT pour la table `item`
---
-ALTER TABLE `item`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
