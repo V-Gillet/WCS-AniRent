@@ -1,13 +1,16 @@
-$primary: #00c2dc;
-$secondary: #ffa718;
+/* Fonts Faces */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;800&family=Fredoka:wght@400;700&display=swap');
+
+$primary: #FFE3E3;
+$secondary: #FF6D99;
 $light: #F1F1F1;
 $dark: #333;
-$danger: #ff4747;
-$valid: #3cdd71;
+$danger: #C6FFFC;
+$valid: #FEFFC6;
 
-$font-title: Arial;
-$font-subtitle: Arial;
-$font-body: Arial;
+$font-title: 'Baloo Paaji 2', cursive, Arial;
+$font-subtitle: 'Fredoka', sans-serif, Arial;
+$font-body: 'Fredoka', sans-serif, Arial;
 
 %flex-center{
     display: flex;
