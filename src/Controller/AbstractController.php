@@ -26,4 +26,12 @@ abstract class AbstractController
         );
         $this->twig->addExtension(new DebugExtension());
     }
+    public function mphToKmh($mph)
+    {
+        return $mph * 1.60;
+    }
+    public function calculateTime($distance, $speed)
+    {
+        return $distance / $speed;
+    }
 }
