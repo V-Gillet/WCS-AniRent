@@ -1,0 +1,22 @@
+.bloc-map{
+    height: 700px;
+    width: 100%;
+}
+
+.labelForm{
+    font-size: 2rem;
+    color: $secondary;
+}
+
+.btn{
+    font-size: 2rem;
+}
+
+.imgForm{
+    object-fit: cover;
+}
+
+.btnForm:hover{
+    color: $light !important;
+    background-color: $secondary;
+}
