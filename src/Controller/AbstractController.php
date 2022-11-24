@@ -29,7 +29,7 @@ abstract class AbstractController
     }
     public function mphToKmh(float $mph)
     {
-        return $mph * 1.60;
+        return round($mph * 1.60, 2);
     }
     public function getDistance()
     {
@@ -41,6 +41,6 @@ abstract class AbstractController
     public function calculateTime($distance, $speed)
     {
         $time = $distance / $speed;
-        return $time;
+        return round($time, 2);
     }
 }

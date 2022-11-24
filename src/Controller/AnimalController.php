@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Model\AnimalApi;
+use App\Model\AnimalManager;
 
 class AnimalController extends AbstractController
 {
@@ -65,6 +66,8 @@ class AnimalController extends AbstractController
     {
         $animalToRent = [];
 
+        $animalImages = $this->getAnimalImage();
+
         foreach ($animals as $animal) {
             $animal['characteristics']['top_speed'] = $animal['characteristics']['top_speed'] ?? '';
             if ($animal['characteristics']['top_speed'] !== '') {
@@ -79,7 +82,20 @@ class AnimalController extends AbstractController
                     'time' => $time
                 ];
             }
+            foreach ($animalImages as $animalImage) {
+                if ($animal['name'] === $animalImage['name']) {
+                    $animalToRent[] = [
+                        'image' => $animalImage['image'],
+                    ];
+                }
+            }
         }
-        return $animalToRent[0];
+        $animalToRent = array_merge($animalToRent[0], $animalToRent[1]);
+        return $animalToRent;
+    }
+    public function getAnimalImage()
+    {
+        $animalManager = new AnimalManager();
+        return $animalManager->selectAll();
     }
 }
