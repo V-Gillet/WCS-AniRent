@@ -1,5 +1,11 @@
-rowAnimal {
+.rowAnimal {
     max-width: 8rem;
     height: 100%;
+    background-color: $danger;
 }
+
+.rowAnimal:nth-child(odd) {  
+    background-color: #FEFFC6;
+}
+
 
