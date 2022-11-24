@@ -74,4 +74,22 @@ h1, h2, h3, h4, h5, h6 {
     width: 4rem;
     height: 4rem; }
 
+.bloc-map {
+  height: 700px;
+  width: 100%; }
+
+.labelForm {
+  font-size: 2rem;
+  color: #FF6D99; }
+
+.btn {
+  font-size: 2rem; }
+
+.imgForm {
+  object-fit: cover; }
+
+.btnForm:hover {
+  color: #F1F1F1 !important;
+  background-color: #FF6D99; }
+
 /*# sourceMappingURL=style.css.map */
