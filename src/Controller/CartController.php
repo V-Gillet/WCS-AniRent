@@ -9,8 +9,11 @@ class CartController extends AbstractController
      */
     public function index(): string
     {
-        // var_dump($_SESSION);
-        // exit();
+        //var_dump($_SESSION);
+        //exit();
+
+
+
         $x1 = $_SESSION['point1'][0];
         $y1 = $_SESSION['point1'][1];
         $x2 = $_SESSION['point2'][0];
@@ -22,5 +25,11 @@ class CartController extends AbstractController
             'x2' => $x2,
             'y2' => $y2,
         ]);
+    }
+
+    public function pricing(float $time): float
+    {
+
+        return 0.1;
     }
 }
