@@ -14,6 +14,7 @@ return [
     'items/add' => ['ItemController', 'add',],
     'items/delete' => ['ItemController', 'delete',],
     'map' => ['MapController', 'index',],
-    'travel' => ['TravelController', 'index',],
-    'animal' => ['AnimalController', 'index',],
+    'voyage' => ['TravelController', 'index'],
+    'animaux' => ['AnimalController', 'index'],
+    'panier' => ['CartController', 'index'],
 ];

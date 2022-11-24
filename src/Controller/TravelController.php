@@ -4,7 +4,6 @@ namespace App\Controller;
 
 use App\Model\MapAPI;
 
-
 class TravelController extends AbstractController
 {
     public function index(): string
