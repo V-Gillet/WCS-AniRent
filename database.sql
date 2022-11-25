@@ -80,3 +80,13 @@ VALUES (
     'admin@anirent.com',
     '$2y$10$4qTLGs27oYYzXjszq97.ae0K1sUwWVosFc8nQ1IlOQWv6YHXtfj5K'
 );
+
+--
+
+CREATE TABLE
+    `order` (
+        `id` INT AUTO_INCREMENT PRIMARY KEY,
+        `name` VARCHAR(255) NOT NULL,
+        `image` TEXT NOT NULL,
+        `price` INT(10) NOT NULL
+    );
