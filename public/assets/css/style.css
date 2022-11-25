@@ -72,9 +72,6 @@ h1, h2, h3, h4, h5, h6 {
   .rowAnimal p {
     font-size: 1.5rem; }
 
-.containerAnimal {
-  margin-bottom: 10rem; }
-
 .rowAnimal:nth-child(odd) {
   background-color: #FEFFC6; }
 
@@ -122,14 +119,13 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #FF6D99; }
 
 .travel-section {
-  height: 100%; }
-
-.travelRow {
-  margin-bottom: 10rem; }
+  height: 100%;
+}
 
 .bloc-title h1 {
   font-size: 4rem;
-  text-shadow: 3px 4px 1px #feffc6; }
+  text-shadow: 3px 4px 1px #feffc6;
+}
 .bloc-title p {
   font-weight: bold;
   font-size: 2rem; }
@@ -139,10 +135,9 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 2rem;
   max-width: 65ch; }
 
-.btn-home {
-  margin-bottom: 10rem; }
-  .btn-home a {
-    font-size: 2rem; }
+.btn-home a {
+  font-size: 2rem;
+}
 
 .block-bg {
   display: flex;
@@ -155,20 +150,20 @@ h1, h2, h3, h4, h5, h6 {
 .containerCart {
   height: 100%;
   max-width: 140vh;
-  margin-bottom: 10rem; }
-
-.rowForm {
-  margin-bottom: 10rem; }
+}
 
 .section-confirm {
-  margin-bottom: 10rem; }
+  margin-bottom: 10rem;
+}
 
 .btnCard:hover {
   color: #F1F1F1 !important;
   background-color: #FF6D99; }
 
 .border-foot {
-  border-top: 1rem solid #FEFFC6 !important; }
+  border-top: 1rem solid #FEFFC6 !important;
+  margin-top: 3rem;
+}
 
 #loader-container {
   display: none; }
