@@ -1,8 +1,7 @@
 .bloc-title {
     h1 {
         font-size: 4rem;
-        -webkit-text-stroke: 2px $primary;
-        text-shadow: 0 4px 4px rgba($dark, 0.25);
+        text-shadow: 3px 4px 1px rgba($valid, 1);
     }
     p {
         font-weight: bold;
@@ -19,6 +18,7 @@
 }
 
 .btn-home {
+    margin-bottom: 10rem;
     a {
         font-size: 2rem;
     }
