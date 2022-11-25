@@ -38,6 +38,9 @@
 				</div>
 				<div class="col-md-10 col-lg-3 my-2 d-flex justify-content-center">
 					<form action="" method="post">
+						<input type="hidden" name="name" value="{{ animal.name }}">
+						<input type="hidden" name="speed" value="{{ animal.speed }}">
+						<input type="hidden" name="time" value="{{ animal.time }}">
 						<input type="hidden" name="price" value="{{ animal.price ?? 300 }}">
 						<button class="btn btn-lg btn-light fw-bold text-secondary fs-2 h-100" type="submit">Sélectionner</button>
 					</form>

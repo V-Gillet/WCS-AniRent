@@ -16,7 +16,7 @@ class AnimalController extends AbstractController
         'Giraffe',
         'Flying Squirrel',
     ];
-    
+
     protected const FLYER = [
         'Mosquito',
         'Sea Eagle',
@@ -29,6 +29,9 @@ class AnimalController extends AbstractController
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_SESSION['shopping-cart'] = [];
             array_push($_SESSION['shopping-cart'], $_POST['price']);
+            $_SESSION['name'] = $_POST['name'];
+            $_SESSION['time'] = $_POST['time'];
+            $_SESSION['speed'] = $_POST['speed'];
 
             header('Location: /panier');
         }
@@ -50,7 +53,7 @@ class AnimalController extends AbstractController
             $flyers[] = $this->getCaracteristic($flyer, $distance);
         }
         $animals = array_merge($flyers, $animals);
-
+        $_SESSION['animals'] = $animals;
         return $this->twig->render('Animal/listAnimals.html.twig', [
             'animals' => $animals,
         ]);
@@ -80,7 +83,6 @@ class AnimalController extends AbstractController
                     'name' => $name,
                     'speed' => $characteristics,
                     'time' => $time,
-
                 ];
             }
 
