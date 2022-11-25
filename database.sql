@@ -47,6 +47,5 @@ VALUES (
     ), (
         'Snowy Owl',
         './assets/images/owl.jpeg',
-        1.5
+        3.5
     );
-
