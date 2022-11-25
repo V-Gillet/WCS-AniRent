@@ -32,6 +32,7 @@ class AnimalController extends AbstractController
             $_SESSION['name'] = $_POST['name'];
             $_SESSION['time'] = $_POST['time'];
             $_SESSION['speed'] = $_POST['speed'];
+            $_SESSION['image'] = $_POST['image'];
 
             header('Location: /panier');
         }

@@ -21,6 +21,7 @@ class CartController extends AbstractController
         $speed = $_SESSION['speed'];
         $name = $_SESSION['name'];
         $time = $_SESSION['time'];
+        $image = $_SESSION['image'];
 
 
         return $this->twig->render('Cart/cart.html.twig', [
@@ -31,7 +32,9 @@ class CartController extends AbstractController
             'totalPrice' => $totalPrice,
             'speed' => $speed,
             'time' => $time,
-            'name' => $name
+            'name' => $name,
+            'image' => $image
+
 
         ]);
     }
