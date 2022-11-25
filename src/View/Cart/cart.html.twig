@@ -9,15 +9,16 @@
 	<div class="container bg-white containerCart rounded">
 		<div class="row mx-2">
 			<div class="col-md-6 pb-3 fw-bold fs-3 text-center">
-				<img src="/assets/images/lama.jpeg" class="rounded my-4 mx-1" alt="">
+				<img src="/assets/images/lama.jpeg" class="rounded my-4 mx-1" alt="image d'animaux">
+				<h2>{{name}}</h2>
 				<div class="speed mb-2 d-flex justify-content-around">
 					<p class="m-0">VITESSE :</p>
-					<p class="m-0">{{ animal.speed ?? '_' }}
+					<p class="m-0">{{ speed ?? '_' }}
 						KM/H</p>
 				</div>
 				<div class="time mb-2 d-flex justify-content-around">
 					<p class="m-0">TEMPS :</p>
-					<p class="m-0">{{ animal.time ?? '_' }}
+					<p class="m-0">{{ time ?? '_' }}
 						Hrs</p>
 				</div>
 				<div class="price mb-2 d-flex justify-content-around">
@@ -28,10 +29,9 @@
 			<div class="col-md-6 p-4 fw-bold fs-3 text-center">
 				{% include '/Components/_map.html.twig'%}
 			</div>
-		</div>
-		<div class="row">
-			<div class="btn btn-lg btn-light btnCard text-secondary fw-bold text-center">Reservez moi</div>
+			<div class="row">
+				<div class="btn btn-lg btn-light btnCard text-secondary fw-bold text-center">Reservez moi</div>
+			</div>
 		</div>
 	</div>
-
 {% endblock %}
