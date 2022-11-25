@@ -30,7 +30,7 @@ VALUES (
         0.5
     ), (
         'Giraffe',
-        './assets/images/giraffe.jpeg',
+        './assets/images/giraffe.svg',
         2.5
     ), (
         'Flying Squirrel',
@@ -38,7 +38,7 @@ VALUES (
         2
     ), (
         'Mosquito',
-        './assets/images/mosquito.jpeg',
+        './assets/images/mosquito.svg',
         0.5
     ), (
         'Sea Eagle',

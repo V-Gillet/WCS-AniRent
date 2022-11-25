@@ -10,4 +10,15 @@
     background-color: #FEFFC6;
 }
 
+.list-animal-image{
+    height:200px; 
+    width:200px;
+    position: relative;
+
+     img{
+        width: 150px;
+        object-fit: contain;
+        @extend %pos-center;
+     }
+}
 

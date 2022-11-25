@@ -1,5 +1,12 @@
 /* Fonts Faces */
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;800&family=Fredoka:wght@400;700&display=swap");
+.list-animal-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -88,6 +95,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .rowAnimal:nth-child(odd) {
   background-color: #FEFFC6;
+}
+
+.list-animal-image {
+  height: 200px;
+  width: 200px;
+  position: relative;
+}
+.list-animal-image img {
+  width: 150px;
+  object-fit: contain;
 }
 
 .title {

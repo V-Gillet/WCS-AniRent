@@ -12,7 +12,9 @@
 			<div class="row justify-content-between rowAnimal bg-danger rounded m-3 p-2 {{loop.index is odd ? 'bg-valid' : ''}}">
 
 				<div class="col-md-10 col-lg-3 my-2 d-flex justify-content-center align-items-center">
-					<img class="rounded" src="/assets/images/lama.jpeg" class="h-100 w-100" alt="Image d'animaux">
+					<div class="list-animal-image bg-light rounded">
+						<img class="rounded" src="{{ animal.image }}" class="list-animal-image" alt="{{ animal.name ~ 'image' }}">
+					</div>
 				</div>
 				<div class="col-md-10 col-lg-2 mb-2 d-flex justify-content-start align-items-center">
 					<h2 class="fw-bold">
