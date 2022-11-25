@@ -1,20 +1,36 @@
 {% extends "layout.html.twig" %}
 
 {% block title %}
-{{parent()}} | Admin
+	{{parent()}}
+	| Admin
 {% endblock %}
 
 {% block content %}
-    <section>
-        <h1>Gestion des utilisateurs</h1>
-        <div class="container">
-            <div class="row">
-                <div class="table">
-                    <div class="thead">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+	<section>
+		<h1>Liste des commandes</h1>
+		<div class="container-fluid">
+			<div class="row">
+				<table class="">
+					<tr>
+						<th colspan="2">Commandes</th>
+					</tr>
+					<tr>
+						<td>N° de commande</td>
+						<td>Nom de l'animal commandé</td>
+						<td>Image de l'animal</td>
+						<td>Prix de la commande</td>
+					</tr>
+					{% for order in orders %}
+						<tr>
+							<td>{{order.id}}</td>
+							<td>{{order.name}}</td>
+							<td><img src="{{'.' ~ order.image}}" alt="image of {{order.name}}" style="width:60px;height:60px;"></td>
+							<td>{{order.price}}
+								€</td>
+						</tr>
+					{% endfor %}
+				</table>
+			</div>
+		</div>
+	</section>
 {% endblock %}
