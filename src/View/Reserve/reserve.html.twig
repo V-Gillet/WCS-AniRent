@@ -1,0 +1,44 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+	{% for error in errors %}
+		<ul>
+			<li>{{error}}</li>
+		</ul>
+	{% endfor %}
+	<div class="travel-section container">
+		<div class="row justify-content-center align-items-center">
+			<h1 class="h1 fw-bold text-secondary mt-5 m-4">Vos coordonnées :</h1>
+			<div class="col-md-6">
+				<form action="" method="post" class="d-flex flex-column">
+					<div class="mb-3">
+						<label for="" class="form-label labelForm">Prénom</label>
+						<input type="text" class="form-control form-control-lg" name="firstname" placeholder="Ace" required>
+					</div>
+					<div class="mb-3">
+						<label for="" class="form-label labelForm">Nom</label>
+						<input type="text" class="form-control form-control-lg" name="lastname" placeholder="Ventura" required>
+					</div>
+					<div class="mb-3">
+						<label for="" class="form-label labelForm">Email</label>
+						<input type="email" class="form-control form-control-lg" name="mail" placeholder="ace.ventura@gmail.com" required>
+					</div>
+					<div class="mb-3">
+						<label for="" class="form-label labelForm">N° de téléphone</label>
+						<input type="phone" class="form-control form-control-lg" name="phone" placeholder="0200000000" required>
+					</div>
+					<div class="mb-3">
+						<label for="" class="form-label labelForm">Adresse</label>
+						<input type="text" class="form-control form-control-lg" name="adress" placeholder="1 rue de l'adresse, 45000 Orléans" required>
+					</div>
+					<button type="submit" class="btn btn-lg btn-light btnForm text-secondary fw-bold">Valider</button>
+				</form>
+			</div>
+			<div class="col-md-6">
+				<div class="bloc-map">
+					<img src="/assets/images/petit-animal-dessin-de-panda-mignonne-en-train-de-manger-bambou-fond-d-ecran-animal-bébé-mignon.jpg" class="w-100 h-100 imgForm" alt="photo de panda">
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

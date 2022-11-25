@@ -10,23 +10,23 @@ INSERT INTO
     animal(`name`, `image`, `price_rate`)
 VALUES (
         'Camel Spider',
-        './assets/images/spider.jpeg',
+        './assets/images/spider.png',
         1.5
     ), (
         'Llama',
-        './assets/images/lama.jpeg',
+        './assets/images/lama.png',
         2.5
     ), (
         'Prairie Dog',
-        './assets/images/dog.jpeg',
+        './assets/images/dog.svg',
         2.5
     ), (
         'Leopard Cat',
-        './assets/images/cat.jpeg',
+        './assets/images/cat.svg',
         3.5
     ), (
         'Painted Turtle',
-        './assets/images/turtle.jpeg',
+        './assets/images/turtle.png',
         0.5
     ), (
         'Giraffe',
@@ -42,10 +42,20 @@ VALUES (
         0.5
     ), (
         'Sea Eagle',
-        './assets/images/eagle.jpeg',
+        './assets/images/eagle.svg',
         5
     ), (
         'Snowy Owl',
-        './assets/images/owl.jpeg',
+        './assets/images/owl.png',
         3.5
+    );
+
+CREATE TABLE
+    user (
+        `id` INT AUTO_INCREMENT PRIMARY KEY,
+        `firstname` VARCHAR(150) NOT NULL,
+        `lastname` VARCHAR(150) NOT NULL,
+        `email` VARCHAR(50) NOT NULL,
+        `phone` INT(20) NOT NULL,
+        `adress` TEXT NOT NULL
     );
