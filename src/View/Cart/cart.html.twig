@@ -9,7 +9,7 @@
 	<div class="container bg-white containerCart rounded p-0">
 		<div class="row mx-2">
 			<div class="col-md-6 p-4 fw-bold fs-3 text-center">
-				<img src="/assets/images/lama.jpeg" class="rounded my-4 mx-1" alt="image d'animaux">
+				<img src="{{animal.image is null ? "/assets/images/lama.png" : animal.image}}" class="rounded my-4 mx-1" alt="image d'animaux">
 				<h2 class="fs-1 fw-bold">{{name}}</h2>
 				<div class="speed mb-2 d-flex justify-content-around">
 					<p class="m-0">VITESSE :</p>
@@ -30,8 +30,11 @@
 				{% include '/Components/_map.html.twig'%}
 			</div>
 		</div>
-		<div class="row">
-			<a class="btn btn-lg btn-light btnCard text-secondary fw-bold text-center" href="/reservation">Reservez moi</a>
+		<div class="row mx-0">
+			<a class="btn btn-lg btn-light btnCard text-secondary px-0 fw-bold text-center" href="/reservation">Reservez moi</a>
+		</div>
+		<div class="row mx-0">
+			<a class="btn btn-lg btn-light btnCard text-secondary px-0 fw-bold text-center" href="/animaux">Retour</a>
 		</div>
 	</div>
 {% endblock %}
