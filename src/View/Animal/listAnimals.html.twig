@@ -1,12 +1,13 @@
 {% extends "layout.html.twig" %}
 
-{% block title %}Liste des animaux
+{% block title %}
+	{{parent()}}| Liste des animaux
 {% endblock %}
 
 {% block content %}
 
 	<h1 class="h1 fw-bold text-center my-5 text-secondary">{{'Choisissez votre animal'|upper}}</h1>
-	<div class="container containerAnimal rounded py-3 bg-light mb-5">
+	<div class="container containerAnimal rounded py-3 bg-light">
 
 		{% for animal in animals %}
 			<div class="row justify-content-between rowAnimal bg-danger rounded m-3 p-2 {{loop.index is odd ? 'bg-valid' : ''}}">

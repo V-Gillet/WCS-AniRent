@@ -72,6 +72,9 @@ h1, h2, h3, h4, h5, h6 {
   .rowAnimal p {
     font-size: 1.5rem; }
 
+.containerAnimal {
+  margin-bottom: 10rem; }
+
 .rowAnimal:nth-child(odd) {
   background-color: #FEFFC6; }
 
@@ -116,6 +119,9 @@ h1, h2, h3, h4, h5, h6 {
 .travel-section {
   height: 100%; }
 
+.travelRow {
+  margin-bottom: 10rem; }
+
 .bloc-title h1 {
   font-size: 4rem;
   -webkit-text-stroke: 2px #FFE3E3;
@@ -129,8 +135,10 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 2rem;
   max-width: 65ch; }
 
-.btn-home a {
-  font-size: 2rem; }
+.btn-home {
+  margin-bottom: 10rem; }
+  .btn-home a {
+    font-size: 2rem; }
 
 .block-bg {
   display: flex;
@@ -142,7 +150,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .containerCart {
   height: 100%;
-  max-width: 140vh; }
+  max-width: 140vh;
+  margin-bottom: 10rem; }
+
+.rowForm {
+  margin-bottom: 10rem; }
+
+.section-confirm {
+  margin-bottom: 10rem; }
 
 .btnCard:hover {
   color: #F1F1F1 !important;
