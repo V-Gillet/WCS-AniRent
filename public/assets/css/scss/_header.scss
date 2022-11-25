@@ -1,8 +1,8 @@
 .title {
-    -webkit-text-stroke: 2px $primary;
+    
     height: 5rem;
     font-size: 4rem;
-    text-shadow: 0 4px 4px rgba($dark, .25);
+    text-shadow: 1px 4px 1px rgba($primary, 1);
 }
 
 .border-nav{
@@ -11,4 +11,13 @@
         width: 4rem;
         height: 4rem;
     }
+}
+.header-logo{   
+        display: none;
+}
+
+@media screen and (min-width: 500px) {
+    .header-logo{   
+        display: block;
+}
 }
