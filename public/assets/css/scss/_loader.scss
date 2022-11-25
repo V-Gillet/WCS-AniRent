@@ -1,6 +1,9 @@
 #loader-container{
   display: none;
 }
+#loader-container2{
+  display: none;
+}
 
 .loader {
     @extend %pos-center;
