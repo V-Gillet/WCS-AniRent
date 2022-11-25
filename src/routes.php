@@ -13,4 +13,7 @@ return [
     'panier' => ['CartController', 'index'],
     'reservation' => ['ReserveController', 'index'],
     'reservation/confirmation' => ['ConfirmController', 'index'],
+    'admin' => ['AdminController', 'index'],
+    'login' => ['LoginController', 'login'],
+    'logout' => ['LoginController', 'logout'],
 ];
