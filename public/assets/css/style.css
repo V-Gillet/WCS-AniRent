@@ -121,6 +121,15 @@ h1, h2, h3, h4, h5, h6 {
   height: 4rem;
 }
 
+.header-logo {
+  display: none;
+}
+
+@media screen and (min-width: 500px) {
+  .header-logo {
+    display: block;
+  }
+}
 .bloc-map {
   height: 700px;
   width: 100%;
