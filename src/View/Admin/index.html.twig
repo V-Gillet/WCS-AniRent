@@ -7,25 +7,22 @@
 
 {% block content %}
 	<section>
-		<h1>Liste des commandes</h1>
-		<div class="container-fluid">
+		<div class="container">
+			<h1 class="h1 fw-bold text-center p-4">Liste des commandes</h1>
 			<div class="row">
-				<table class="">
+				<table>
 					<tr>
-						<th colspan="2">Commandes</th>
-					</tr>
-					<tr>
-						<td>N° de commande</td>
-						<td>Nom de l'animal commandé</td>
-						<td>Image de l'animal</td>
-						<td>Prix de la commande</td>
+						<td class="fw-bold fs-3">N° de commande</td>
+						<td class="fw-bold fs-3">Nom de l'animal commandé</td>
+						<td class="fw-bold fs-3">Image de l'animal</td>
+						<td class="fw-bold fs-3">Prix de la commande</td>
 					</tr>
 					{% for order in orders %}
 						<tr>
-							<td>{{order.id}}</td>
-							<td>{{order.name}}</td>
-							<td><img src="{{'.' ~ order.image}}" alt="image of {{order.name}}" style="width:60px;height:60px;"></td>
-							<td>{{order.price}}
+							<td class="fs-5">{{order.id}}</td>
+							<td class="fs-5">{{order.name}}</td>
+							<td class="fs-5"><img src="{{'.' ~ order.image}}" alt="image of {{order.name}}" style="width:60px;height:60px;"></td>
+							<td class="fs-5">{{order.price}}
 								€</td>
 						</tr>
 					{% endfor %}

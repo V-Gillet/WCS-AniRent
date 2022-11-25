@@ -2,24 +2,32 @@
 <svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 726.5 773">
   <defs>
     <style>
-      .cls-1 {
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2, .cls-4, .cls-6, .cls-7 {
+        stroke: #000;
+      }
+
+      .cls-1, .cls-5, .cls-6, .cls-7 {
+        stroke-width: 12px;
+      }
+
+      .cls-2 {
+        stroke-width: 6px;
+      }
+
+      .cls-8, .cls-4, .cls-6 {
         fill: #fff;
       }
 
-      .cls-2, .cls-3, .cls-4 {
-        fill: #feffc6;
-      }
-
-      .cls-5 {
+      .cls-3 {
         filter: url(#drop-shadow-1);
         stroke: #ffe3e3;
       }
 
-      .cls-5, .cls-3, .cls-6, .cls-7, .cls-8, .cls-4, .cls-9 {
-        stroke-miterlimit: 10;
-      }
-
-      .cls-5, .cls-6 {
+      .cls-3, .cls-5 {
         fill: #ffe3e3;
         font-family: BalooPaaji2-Bold, 'Baloo Paaji 2';
         font-size: 122.36px;
@@ -27,32 +35,16 @@
         font-weight: 700;
       }
 
-      .cls-3 {
+      .cls-4 {
         stroke-width: 8px;
       }
 
-      .cls-3, .cls-7, .cls-8, .cls-4, .cls-9 {
-        stroke: #000;
-      }
-
-      .cls-6 {
+      .cls-5 {
         stroke: #feffc6;
       }
 
-      .cls-6, .cls-7, .cls-8, .cls-4 {
-        stroke-width: 12px;
-      }
-
-      .cls-7, .cls-9 {
-        fill: #c6fffc;
-      }
-
-      .cls-8 {
+      .cls-7 {
         fill: #ff6d99;
-      }
-
-      .cls-9 {
-        stroke-width: 6px;
       }
     </style>
     <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
@@ -64,22 +56,22 @@
     </filter>
   </defs>
   <g id="Calque_1-2" data-name="Calque 1">
-    <rect class="cls-8" x="73" y="491" width="590" height="276" rx="84.21" ry="84.21"/>
-    <path class="cls-7" d="M461.5,117.64c0,61.58,53.73,111.5,120,111.5s139-49.42,139-111S647.77,6.14,581.5,6.14s-120,49.92-120,111.5Z"/>
-    <path class="cls-7" d="M265,117.5c0,61.58-53.73,111.5-120,111.5S6,179.58,6,118,78.73,6,145,6s120,49.92,120,111.5Z"/>
-    <path class="cls-4" d="M701,341c0,155.74-149.09,182-333,182S35,496.74,35,341,184.09,59,368,59s333,126.26,333,282Z"/>
-    <ellipse class="cls-9" cx="238.85" cy="335.96" rx="90.59" ry="72.41" transform="translate(-157.46 222.59) rotate(-38.63)"/>
+    <rect class="cls-7" x="73" y="491" width="590" height="276" rx="84.21" ry="84.21"/>
+    <path class="cls-1" d="M461.5,117.64c0,61.58,53.73,111.5,120,111.5s139-49.42,139-111S647.77,6.14,581.5,6.14s-120,49.92-120,111.5Z"/>
+    <path class="cls-1" d="M265,117.5c0,61.58-53.73,111.5-120,111.5S6,179.58,6,118,78.73,6,145,6s120,49.92,120,111.5Z"/>
+    <path class="cls-6" d="M701,341c0,155.74-149.09,182-333,182S35,496.74,35,341,184.09,59,368,59s333,126.26,333,282Z"/>
+    <ellipse class="cls-2" cx="238.85" cy="335.96" rx="90.59" ry="72.41" transform="translate(-157.46 222.59) rotate(-38.63)"/>
     <circle cx="265.5" cy="335.5" r="44.5"/>
-    <circle class="cls-1" cx="280" cy="322" r="22"/>
-    <ellipse class="cls-9" cx="507.36" cy="336.25" rx="72.41" ry="90.59" transform="translate(-72.04 522.73) rotate(-51.37)"/>
+    <circle class="cls-8" cx="280" cy="322" r="22"/>
+    <ellipse class="cls-2" cx="507.36" cy="336.25" rx="72.41" ry="90.59" transform="translate(-72.04 522.73) rotate(-51.37)"/>
     <circle cx="480.71" cy="335.8" r="44.5"/>
-    <ellipse class="cls-3" cx="338.58" cy="420.81" rx="32.56" ry="31.52"/>
-    <ellipse class="cls-3" cx="403.8" cy="422.48" rx="32.56" ry="31.52"/>
-    <rect class="cls-2" x="302" y="385" width="141.63" height="35.86"/>
-    <circle class="cls-1" cx="244.46" cy="350.24" r="13.76"/>
-    <circle class="cls-1" cx="466.96" cy="325.48" r="22"/>
-    <circle class="cls-1" cx="502.49" cy="353.72" r="13.76"/>
-    <text class="cls-6" transform="translate(129 667.49) scale(.97 1)"><tspan x="0" y="0">ANI RENT</tspan></text>
-    <text class="cls-5" transform="translate(128.87 669.49) scale(.97 1)"><tspan x="0" y="0">ANI RENT</tspan></text>
+    <ellipse class="cls-4" cx="338.58" cy="420.81" rx="32.56" ry="31.52"/>
+    <ellipse class="cls-4" cx="403.8" cy="422.48" rx="32.56" ry="31.52"/>
+    <rect class="cls-8" x="302" y="385" width="141.63" height="35.86"/>
+    <circle class="cls-8" cx="244.46" cy="350.24" r="13.76"/>
+    <circle class="cls-8" cx="466.96" cy="325.48" r="22"/>
+    <circle class="cls-8" cx="502.49" cy="353.72" r="13.76"/>
+    <text class="cls-5" transform="translate(129 667.49) scale(.97 1)"><tspan x="0" y="0">ANI RENT</tspan></text>
+    <text class="cls-3" transform="translate(128.87 669.49) scale(.97 1)"><tspan x="0" y="0">ANI RENT</tspan></text>
   </g>
 </svg>

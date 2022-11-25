@@ -32,6 +32,7 @@ class AnimalController extends AbstractController
             $_SESSION['name'] = $_POST['name'];
             $_SESSION['time'] = $_POST['time'];
             $_SESSION['speed'] = $_POST['speed'];
+            $_SESSION['image'] = $_POST['image'];
 
             header('Location: /panier');
         }
@@ -54,6 +55,7 @@ class AnimalController extends AbstractController
         }
         $animals = array_merge($flyers, $animals);
         $_SESSION['animals'] = $animals;
+
         return $this->twig->render('Animal/listAnimals.html.twig', [
             'animals' => $animals,
         ]);
@@ -73,7 +75,30 @@ class AnimalController extends AbstractController
         foreach ($animals as $animal) {
             $animal['characteristics']['top_speed'] = $animal['characteristics']['top_speed'] ?? '';
             if ($animal['characteristics']['top_speed'] !== '') {
+
                 $name = $animal['name'];
+                if ($name === 'Camel Spider') {
+                    $name = 'Araignée';
+                } elseif ($name === 'Llama') {
+                    $name = 'Lama';
+                } elseif ($name === 'Prairie Dog') {
+                    $name = 'Chien de prairie';
+                } elseif ($name === 'Leopard Cat') {
+                    $name = 'Chat';
+                } elseif ($name === 'Painted Turtle') {
+                    $name = 'Tortue';
+                } elseif ($name === 'Giraffe') {
+                    $name = 'Girafe';
+                } elseif ($name === 'Flying Squirrel') {
+                    $name = 'Écureuil';
+                } elseif ($name === 'Mosquito') {
+                    $name = 'Moustique';
+                } elseif ($name === 'Sea Eagle') {
+                    $name = 'Aigle';
+                } elseif ($name === 'Snowy Owl') {
+                    $name = 'Chouette';
+                }
+
                 $speed = (float)$animal['characteristics']['top_speed'] * 0.7;
                 $characteristics = $this->mphToKmh($speed);
                 $time = $this->calculateTime($distance, $characteristics);
