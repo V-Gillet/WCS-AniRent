@@ -92,9 +92,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.5rem;
 }
 
-.containerAnimal {
-  margin-bottom: 10rem; }
-
 .rowAnimal:nth-child(odd) {
   background-color: #FEFFC6;
 }
@@ -110,10 +107,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .title {
-  -webkit-text-stroke: 2px #FFE3E3;
   height: 5rem;
   font-size: 4rem;
-  text-shadow: 0 4px 4px rgba(51, 51, 51, 0.25);
+  text-shadow: 1px 4px 1px #ffe3e3;
 }
 
 .border-nav {
@@ -160,13 +156,9 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
 }
 
-.travelRow {
-  margin-bottom: 10rem; }
-
 .bloc-title h1 {
   font-size: 4rem;
-  -webkit-text-stroke: 2px #FFE3E3;
-  text-shadow: 0 4px 4px rgba(51, 51, 51, 0.25);
+  text-shadow: 3px 4px 1px #feffc6;
 }
 .bloc-title p {
   font-weight: bold;
@@ -179,10 +171,9 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 65ch;
 }
 
-.btn-home {
-  margin-bottom: 10rem; }
 .btn-home a {
-    font-size: 2rem; }
+  font-size: 2rem;
+}
 
 .block-bg {
   display: flex;
@@ -198,13 +189,11 @@ h1, h2, h3, h4, h5, h6 {
 .containerCart {
   height: 100%;
   max-width: 140vh;
-  margin-bottom: 10rem; }
-
-.rowForm {
-  margin-bottom: 10rem; }
+}
 
 .section-confirm {
-  margin-bottom: 10rem; }
+  margin-bottom: 10rem;
+}
 
 .btnCard:hover {
   color: #F1F1F1 !important;
@@ -213,6 +202,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .border-foot {
   border-top: 1rem solid #FEFFC6 !important;
+  margin-top: 3rem;
 }
 
 #loader-container {
