@@ -33,4 +33,12 @@
 			</div>
 		</div>
 	</div>
+	<div id="loader-container">
+	{% block loader %}
+		{% include "/Components/_loader.html.twig" %}
+	{% endblock %}
+	</div>
+{% endblock %}
+{% block javascript %}
+	<script src="/assets/js/loader.js"></script>
 {% endblock %}

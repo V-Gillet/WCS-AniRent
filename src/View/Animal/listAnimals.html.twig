@@ -46,11 +46,19 @@
 						<input type="hidden" name="time" value="{{ animal.time }}">
 						<input type="hidden" name="price" value="{{ animal.price ?? 300 }}">
 						<input type="hidden" name="image" value="{{ animal.image }}">
-						<button class="btn btn-lg btn-light fw-bold text-secondary fs-2 h-100" type="submit">Sélectionner</button>
+						<button id="submit-and-load2" class="btn btn-lg btn-light fw-bold text-secondary fs-2 h-100" type="submit">Sélectionner</button>
 					</form>
 				</div>
 
 			</div>
 		{% endfor %}
 	</div>
+	<div id="loader-container2">
+	{% block loader %}
+		{% include "/Components/_loader.html.twig" %}
+	{% endblock %}
+	</div>
+{% endblock %}
+{% block javascript %}
+	<script src="/assets/js/loader2.js"></script>
 {% endblock %}

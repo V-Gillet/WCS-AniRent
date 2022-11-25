@@ -1,5 +1,7 @@
-const buttonLoader = document.getElementById('submit-and-load')
+let buttonLoader = document.getElementById('submit-and-load')
+
 const loaderContainer = document.getElementById('loader-container')
+
 
 
 buttonLoader.addEventListener('click', ()=> {
@@ -8,7 +10,3 @@ buttonLoader.addEventListener('click', ()=> {
 
 
 
-
-
-  
-  

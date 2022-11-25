@@ -1,9 +1,13 @@
 #loader-container{
   display: none;
 }
+#loader-container2{
+  display: none;
+}
 
 .loader {
     @extend %pos-center;
+    position: fixed;
     width:300px; 
     height:300px; 
     z-index:4;
