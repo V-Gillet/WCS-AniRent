@@ -59,3 +59,11 @@ CREATE TABLE
         `phone` INT(20) NOT NULL,
         `adress` TEXT NOT NULL
     );
+
+CREATE TABLE
+    `order` (
+        `id` INT AUTO_INCREMENT PRIMARY KEY,
+        `name` VARCHAR(255) NOT NULL,
+        `image` TEXT NOT NULL,
+        `price` INT(10) NOT NULL
+    );

@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Model\OrderManager;
 use App\Model\UserManager;
 
 class ReserveController extends AbstractController
@@ -15,6 +16,8 @@ class ReserveController extends AbstractController
             if (empty($errors)) {
                 $userManager = new UserManager();
                 $userManager->insert($newCustomer);
+                $orderManager = new OrderManager();
+                $orderManager->insert($_SESSION['shopping-cart']);
 
                 header('Location: reservation/confirmation');
             } else {
