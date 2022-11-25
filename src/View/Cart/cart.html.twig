@@ -6,26 +6,32 @@
 
 	<h1 class="h1 fw-bold text-center my-5 text-secondary">{{"Votre Panier :"|upper}}</h1>
 
-	<div class="container bg-white containerCart rounded">
+	<div class="container bg-white containerCart rounded p-0">
 		<div class="row mx-2">
-			<div class="col-md-5 order-1 pb-3 fw-bold fs-3 text-center"><img src="/assets/images/lama.jpeg" class="rounded my-4 mx-1" alt="">
-				<h2>{{name}}</h2>
-				<div>Vitesse:
-					{{speed}}
-					KM/H</div>
-				<div>Temps :
-					{{time}}
-					Heures</div>
-				<div>Prix :
-					{{ totalPrice ~ " €"}}</div>
+			<div class="col-md-6 p-4 fw-bold fs-3 text-center">
+				<img src="/assets/images/lama.jpeg" class="rounded my-4 mx-1" alt="image d'animaux">
+				<h2 class="fs-1 fw-bold">{{name}}</h2>
+				<div class="speed mb-2 d-flex justify-content-around">
+					<p class="m-0">VITESSE :</p>
+					<p class="m-0">{{ speed ?? '_' }}
+						KM/H</p>
+				</div>
+				<div class="time mb-2 d-flex justify-content-around">
+					<p class="m-0">TEMPS :</p>
+					<p class="m-0">{{ time ?? '_' }}
+						Hrs</p>
+				</div>
+				<div class="price mb-2 d-flex justify-content-around">
+					<p class="m-0">PRIX :</p>
+					<p class="m-0">{{ totalPrice ~ " €"}}</p>
+				</div>
+			</div>
+			<div class="col-md-6 p-4 fw-bold fs-3 text-center">
+				{% include '/Components/_map.html.twig'%}
 			</div>
 		</div>
-		<div class="row">
-			<div class="btn btn-lg btn-light btnCard text-secondary fw-bold text-center">Reservez moi</div>
+		<div class="col mt-3 p-0">
+			<div class="btn btn-lg btn-light btnCard text-secondary fw-bold text-center py-2 px-0 w-100">Reservez moi</div>
 		</div>
 	</div>
-
-
-	{% include '/Components/_map.html.twig'%}
-
 {% endblock %}
