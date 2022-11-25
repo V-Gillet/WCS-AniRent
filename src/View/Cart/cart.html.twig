@@ -8,19 +8,30 @@
 
 	<div class="container bg-white containerCart rounded">
 		<div class="row mx-2">
-			<div class="col-md-5 order-1 pb-3 fw-bold fs-3 text-center"><img src="/assets/images/lama.jpeg" class="rounded my-4 mx-1" alt="">
-				<div>Vitesse: 55 KM/H</div>
-				<div>Temps : 30 Heures</div>
-				<div>Prix : {{ totalPrice ~ " €"}}</div>
+			<div class="col-md-6 pb-3 fw-bold fs-3 text-center">
+				<img src="/assets/images/lama.jpeg" class="rounded my-4 mx-1" alt="">
+				<div class="speed mb-2 d-flex justify-content-around">
+					<p class="m-0">VITESSE :</p>
+					<p class="m-0">{{ animal.speed ?? '_' }}
+						KM/H</p>
+				</div>
+				<div class="time mb-2 d-flex justify-content-around">
+					<p class="m-0">TEMPS :</p>
+					<p class="m-0">{{ animal.time ?? '_' }}
+						Hrs</p>
+				</div>
+				<div class="price mb-2 d-flex justify-content-around">
+					<p class="m-0">PRIX :</p>
+					<p class="m-0">{{ totalPrice ~ " €"}}</p>
+				</div>
+			</div>
+			<div class="col-md-6 p-4 fw-bold fs-3 text-center">
+				{% include '/Components/_map.html.twig'%}
 			</div>
 		</div>
-        <div class="row">
-        <div class="btn btn-lg btn-light btnCard text-secondary fw-bold text-center">Reservez moi</div>
-        </div>
+		<div class="row">
+			<div class="btn btn-lg btn-light btnCard text-secondary fw-bold text-center">Reservez moi</div>
+		</div>
 	</div>
-
-
-	
-	{% include '/Components/_map.html.twig'%}
 
 {% endblock %}
