@@ -34,7 +34,7 @@ VALUES (
         2.5
     ), (
         'Flying Squirrel',
-        './assets/images/squirrel.jpeg',
+        './assets/images/squirrel.png',
         2
     ), (
         'Mosquito',
