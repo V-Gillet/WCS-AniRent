@@ -49,3 +49,13 @@ VALUES (
         './assets/images/owl.jpeg',
         3.5
     );
+
+CREATE TABLE
+    user (
+        `id` INT AUTO_INCREMENT PRIMARY KEY,
+        `firstname` VARCHAR(150) NOT NULL,
+        `lastname` VARCHAR(150) NOT NULL,
+        `email` VARCHAR(50) NOT NULL,
+        `phone` INT(20) NOT NULL,
+        `adress` TEXT NOT NULL
+    );
