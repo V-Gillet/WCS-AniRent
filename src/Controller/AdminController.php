@@ -2,10 +2,17 @@
 
 namespace App\Controller;
 
+use App\Model\OrderManager;
+
 class AdminController extends AbstractController
 {
     public function index()
     {
-        return $this->twig->render('Admin/index.html.twig');
+        $orderManager = new OrderManager();
+        $orders = $orderManager->selectAll();
+
+        return $this->twig->render('Admin/index.html.twig', [
+            'orders' => $orders,
+        ]);
     }
 }
