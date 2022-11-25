@@ -1,21 +1,35 @@
 {% extends 'layout.html.twig' %}
 
 {% block content %}
-	<h1>Hello Wilder !</h1>
-	<p>Find a complete CRUD example on
-		<a href="/items">/items</a>
-		page.
-	</p>
-
-	<form action="" method="post">
-		<label for="">Adresse de départ</label>
-		<input type="text" name="adress1">
-		<label for="">Code postal de départ</label>
-		<input type="number" name="post-code1">
-		<label for="">Adresse d'arrivée</label>
-		<input type="text" name="adress2">
-		<label for="">Code postal d'arrivée</label>
-		<input type="number" name="post-code2">
-		<button type="submit">Valider</button>
-	</form>
+	<div class="travel-section container">
+		<div class="row justify-content-center align-items-center">
+			<h1 class="h1 fw-bold text-secondary mt-5 m-4">Itinéraire :</h1>
+			<div class="col-md-6">
+				<form action="" method="post" class="d-flex flex-column">
+					<div class="mb-4">
+						<label for="" class="form-label labelForm">Adresse de départ</label>
+						<input type="text" class="form-control form-control-lg" name="adress1" placeholder="1 rue de l'aube" required>
+					</div>
+					<div class="mb-4">
+						<label for="" class="form-label labelForm">Code postal de départ</label>
+						<input type="number" class="form-control form-control-lg" name="post-code1" placeholder="45160" required>
+					</div>
+					<div class="mb-4">
+						<label for="" class="form-label labelForm">Adresse d'arrivée</label>
+						<input type="text" class="form-control form-control-lg" name="adress2" placeholder="20 rue de l'arrivée" required>
+					</div>
+					<div class="mb-4">
+						<label for="" class="form-label labelForm">Code postal d'arrivée</label>
+						<input type="number" class="form-control form-control-lg" name="post-code2" placeholder="69800" required>
+					</div>
+					<button type="submit" class="btn btn-lg btn-light btnForm text-secondary fw-bold">Valider</button>
+				</form>
+			</div>
+			<div class="col-md-6">
+				<div class="bloc-map">
+					<img src="/assets/images/petit-animal-dessin-de-panda-mignonne-en-train-de-manger-bambou-fond-d-ecran-animal-bébé-mignon.jpg" class="w-100 h-100 imgForm" alt="photo de panda">
+				</div>
+			</div>
+		</div>
+	</div>
 {% endblock %}

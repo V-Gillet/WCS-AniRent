@@ -49,3 +49,4 @@ VALUES (
         './assets/images/owl.jpeg',
         1.5
     );
+
