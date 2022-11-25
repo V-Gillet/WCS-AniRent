@@ -18,13 +18,19 @@ class CartController extends AbstractController
         $y2 = $_SESSION['point2'][1];
 
         $totalPrice = array_sum($_SESSION['shopping-cart']);
+        $speed = $_SESSION['speed'];
+        $time = $_SESSION['time'];
+
 
         return $this->twig->render('Cart/cart.html.twig', [
             'x1' => $x1,
             'y1' => $y1,
             'x2' => $x2,
             'y2' => $y2,
-            'totalPrice' => $totalPrice
+            'totalPrice' => $totalPrice,
+            'speed' => $speed,
+            'time' => $time,
+
         ]);
     }
 }
