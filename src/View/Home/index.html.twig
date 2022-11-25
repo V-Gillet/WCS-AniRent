@@ -1,6 +1,30 @@
 {% extends 'layout.html.twig' %}
 
+{% block title %}
+	{{parent()}}
+	| Accueil
+{% endblock %}
+
 {% block content %}
-    <h1 class="fs-2">Hello Wilder !</h1>
-    <p>Find a complete CRUD example on <a href="/items">/items</a> page.</p>
+	<section>
+		<div class="container landing">
+			<img src="/assets/images/header.png" alt="plein de têtes animaux" class="w-100 h-100 mt-4">
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<div class="bloc-title m-5 d-flex flex-column justify-content-center align-items-center">
+				<h1 class="h1 title-home fw-bold">ANI RENT</h1>
+				<p>Tu aimes voyager ?</p>
+				<p>Et tu aimes les animaux ?</p>
+				<p>Alors voyage à dos d'animaux !</p>
+			</div>
+			<div class="bloc-text m-5 d-flex justify-content-center align-items-center">
+				<p>La société ANI RENT à été créé par une équipe de globetrotter motivé pour pouvoir effectuer un voyage à dos d’animal . Vous aurez la possibilité de choisir entre différentes espèces .</p>
+			</div>
+			<div class="btn-home d-flex justify-content-center align-items-center mb-5">
+				<a href="/voyage" class="btn btn-lg btn-light text-secondary fw-bold p-5 fs-1">C'est parti !</a>
+			</div>
+		</div>
+	</section>
 {% endblock %}

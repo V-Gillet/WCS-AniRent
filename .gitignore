@@ -6,3 +6,5 @@ db.php
 .idea
 .vscode
 .DS_Store
+style.css.map
+/.sass-cache/

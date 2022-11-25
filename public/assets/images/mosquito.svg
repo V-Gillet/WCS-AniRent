@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_2_00000139292713720107977420000014423408976045432448_"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 343.9 342.2"
+	 style="enable-background:new 0 0 343.9 342.2;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E1B89A;stroke:#000000;stroke-width:5;stroke-miterlimit:10;}
+	.st1{fill:#FFFCFA;}
+	.st2{fill:#FFFFFF;}
+	.st3{fill:#CB775A;stroke:#000000;stroke-width:5;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#FF74AB;stroke-width:3;stroke-miterlimit:10;}
+	.st5{fill:#CB775A;}
+</style>
+<g id="Calque_1-2">
+	<ellipse class="st0" cx="171.9" cy="142.3" rx="171.9" ry="142.3"/>
+	<ellipse class="st1" cx="72.3" cy="156.9" rx="41.2" ry="28.8"/>
+	<ellipse class="st1" cx="294.8" cy="156.9" rx="41.2" ry="28.8"/>
+	
+		<ellipse transform="matrix(8.248051e-02 -0.9966 0.9966 8.248051e-02 12.8709 192.7202)" cx="111.1" cy="89.4" rx="38.7" ry="38.8"/>
+	<circle class="st2" cx="118.7" cy="89.4" r="22.4"/>
+	<ellipse transform="matrix(0.1091 -0.994 0.994 0.1091 127.9957 321.5549)" cx="243.4" cy="89.4" rx="38.7" ry="38.8"/>
+	<circle class="st2" cx="253.6" cy="89.4" r="23.9"/>
+	<path class="st3" d="M234.3,193.1c0,37.9,9.1,149.1,9.1,149.1c-15.2,0-111.2-109.5-111.2-147.4s5.4-65.4,50.8-65.4
+		S234.3,155.2,234.3,193.1L234.3,193.1z"/>
+	<line class="st4" x1="72.3" y1="128.1" x2="38.9" y2="173.8"/>
+	<line class="st4" x1="89.1" y1="134.1" x2="55.6" y2="179.8"/>
+	<line class="st4" x1="113" y1="134.1" x2="79.6" y2="179.8"/>
+	<line class="st4" x1="291.2" y1="125.1" x2="257.8" y2="170.8"/>
+	<line class="st4" x1="307.9" y1="131.1" x2="274.5" y2="176.8"/>
+	<line class="st4" x1="331.8" y1="131.1" x2="298.4" y2="176.8"/>
+	<path class="st5" d="M237.5,192.5c0,38.1,5.8,149.7,5.8,149.7c-11.1-2.6-109.3-110.3-114-145.5c-5-37.8,2.4-71.6,54.5-71.6
+		c45.4,0,53.1,12.3,53.1,50.4L237.5,192.5z"/>
+</g>
+</svg>

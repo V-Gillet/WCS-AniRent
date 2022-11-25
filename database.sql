@@ -1,63 +1,92 @@
--- phpMyAdmin SQL Dump
--- version 4.5.4.1deb2ubuntu2
--- http://www.phpmyadmin.net
---
--- Client :  localhost
--- Généré le :  Jeu 26 Octobre 2017 à 13:53
--- Version du serveur :  5.7.19-0ubuntu0.16.04.1
--- Version de PHP :  7.0.22-0ubuntu0.16.04.1
+CREATE TABLE
+    animal (
+        `id` INT AUTO_INCREMENT PRIMARY KEY,
+        `name` VARCHAR(255) NOT NULL,
+        `image` TEXT NOT NULL,
+        `price_rate` FLOAT NOT NULL
+    );
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
+INSERT INTO
+    animal(`name`, `image`, `price_rate`)
+VALUES (
+        'Camel Spider',
+        './assets/images/spider.png',
+        1.5
+    ), (
+        'Llama',
+        './assets/images/lama.png',
+        2.5
+    ), (
+        'Prairie Dog',
+        './assets/images/dog.svg',
+        2.5
+    ), (
+        'Leopard Cat',
+        './assets/images/cat.svg',
+        3.5
+    ), (
+        'Painted Turtle',
+        './assets/images/turtle.png',
+        0.5
+    ), (
+        'Giraffe',
+        './assets/images/giraffe.svg',
+        2.5
+    ), (
+        'Flying Squirrel',
+        './assets/images/squirrel.png',
+        2
+    ), (
+        'Mosquito',
+        './assets/images/mosquito.svg',
+        0.5
+    ), (
+        'Sea Eagle',
+        './assets/images/eagle.svg',
+        5
+    ), (
+        'Snowy Owl',
+        './assets/images/owl.png',
+        3.5
+    );
 
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- Base de données :  `simple-mvc`
---
-
--- --------------------------------------------------------
+CREATE TABLE
+    user (
+        `id` INT AUTO_INCREMENT PRIMARY KEY,
+        `firstname` VARCHAR(150) NOT NULL,
+        `lastname` VARCHAR(150) NOT NULL,
+        `email` VARCHAR(50) NOT NULL,
+        `phone` INT(20) NOT NULL,
+        `adress` TEXT NOT NULL
+    );
 
 --
--- Structure de la table `item`
---
 
-CREATE TABLE `item` (
-  `id` int(11) UNSIGNED NOT NULL,
-  `title` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Contenu de la table `item`
---
-
-INSERT INTO `item` (`id`, `title`) VALUES
-(1, 'Stuff'),
-(2, 'Doodads');
+CREATE TABLE 
+    admin (
+        `id` INT(11) UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT,
+        `email` VARCHAR(255) NOT NULL UNIQUE,
+        `password` VARCHAR(100) NOT NULL
+    );
 
 --
--- Index pour les tables exportées
---
+
+INSERT INTO
+    admin (
+        `email`,
+        `password`
+    )
+VALUES (
+    'admin@anirent.com',
+    '$2y$10$4qTLGs27oYYzXjszq97.ae0K1sUwWVosFc8nQ1IlOQWv6YHXtfj5K'
+);
 
 --
--- Index pour la table `item`
---
-ALTER TABLE `item`
-  ADD PRIMARY KEY (`id`);
 
---
--- AUTO_INCREMENT pour les tables exportées
---
-
---
--- AUTO_INCREMENT pour la table `item`
---
-ALTER TABLE `item`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+CREATE TABLE
+    `order` (
+        `id` INT AUTO_INCREMENT PRIMARY KEY,
+        `name` VARCHAR(255) NOT NULL,
+        `image` TEXT NOT NULL,
+        `price` INT(10) NOT NULL
+    );

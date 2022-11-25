@@ -1,0 +1,68 @@
+#loader-container{
+  display: none;
+}
+#loader-container2{
+  display: none;
+}
+
+.loader {
+    @extend %pos-center;
+    position: fixed;
+    width:300px; 
+    height:300px; 
+    z-index:4;
+    background-color: $valid;
+    border: 10px solid $danger;
+  
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+
+    .image {
+      height: 150px;
+      transform-origin: bottom center;
+      animation: 3s rotate infinite;
+      opacity: 0;
+    }
+    .loading-text {
+      animation: popop infinite 2s;
+    }
+}
+  
+  @keyframes rotate{
+    0% {
+      transform: rotate(90deg);
+    }
+    10% {
+      opacity: 0;
+    }
+    35% {
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+    65% {
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+    80% {
+      opacity: 0;
+    }
+    100% {
+      transform: rotate(-90deg);
+    }
+  }
+
+  @keyframes popop{
+    0% {
+      opacity: 100%;
+    }
+    50% {
+      opacity: 0%;
+    }
+    100%{
+      opacity: 100%;
+    }
+  }

@@ -1,0 +1,40 @@
+{% extends "layout.html.twig" %}
+{% block title %}Panier
+{% endblock %}
+
+{% block content %}
+
+	<h1 class="h1 fw-bold text-center my-5 text-secondary">{{"Votre Panier :"|upper}}</h1>
+
+	<div class="container bg-white containerCart rounded p-0">
+		<div class="row mx-2">
+			<div class="col-md-6 p-4 fw-bold fs-3 text-center">
+				<img src="{{image is null ? "/assets/images/lama.png" : image}}" class="rounded my-4 mx-1 w-50 h-50" alt="image d'animaux">
+				<h2 class="fs-1 fw-bold">{{name}}</h2>
+				<div class="speed mb-2 d-flex justify-content-around">
+					<p class="m-0">VITESSE :</p>
+					<p class="m-0">{{ speed ?? '_' }}
+						KM/H</p>
+				</div>
+				<div class="time mb-2 d-flex justify-content-around">
+					<p class="m-0">TEMPS :</p>
+					<p class="m-0">{{ time ?? '_' }}
+						Hrs</p>
+				</div>
+				<div class="price mb-2 d-flex justify-content-around">
+					<p class="m-0">PRIX :</p>
+					<p class="m-0">{{ totalPrice ~ " €"}}</p>
+				</div>
+			</div>
+			<div class="col-md-6 p-4 fw-bold fs-3 text-center">
+				{% include '/Components/_map.html.twig'%}
+			</div>
+		</div>
+		<div class="row mx-0">
+			<a class="btn btn-lg btn-light btnCard text-secondary px-0 fw-bold text-center" href="/reservation">Reservez moi</a>
+		</div>
+		<div class="row mx-0 mb-5">
+			<a class="btn btn-lg btn-light btnCard text-secondary px-0 fw-bold text-center" href="/animaux">Retour</a>
+		</div>
+	</div>
+{% endblock %}
