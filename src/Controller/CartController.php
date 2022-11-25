@@ -19,6 +19,7 @@ class CartController extends AbstractController
 
         $totalPrice = array_sum($_SESSION['shopping-cart']);
         $speed = $_SESSION['speed'];
+        $name = $_SESSION['name'];
         $time = $_SESSION['time'];
 
 
@@ -30,6 +31,7 @@ class CartController extends AbstractController
             'totalPrice' => $totalPrice,
             'speed' => $speed,
             'time' => $time,
+            'name' => $name
 
         ]);
     }

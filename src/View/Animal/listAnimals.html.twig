@@ -23,6 +23,7 @@
 				</div>
 				<div class="col-2 rounded-end bg-white m-1">
 					<form action="" method="post">
+						<input type="hidden" name="name" value="{{ animal.name }}">
 						<input type="hidden" name="speed" value="{{ animal.speed }}">
 						<input type="hidden" name="time" value="{{ animal.time }}">
 						<input type="hidden" name="price" value="{{ animal.price ?? 300 }}">
