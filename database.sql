@@ -59,3 +59,24 @@ CREATE TABLE
         `phone` INT(20) NOT NULL,
         `adress` TEXT NOT NULL
     );
+
+--
+
+CREATE TABLE 
+    admin (
+        `id` INT(11) UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT,
+        `email` VARCHAR(255) NOT NULL UNIQUE,
+        `password` VARCHAR(100) NOT NULL
+    );
+
+--
+
+INSERT INTO
+    admin (
+        `email`,
+        `password`
+    )
+VALUES (
+    'admin@anirent.com',
+    '$2y$10$4qTLGs27oYYzXjszq97.ae0K1sUwWVosFc8nQ1IlOQWv6YHXtfj5K'
+);
