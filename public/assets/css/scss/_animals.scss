@@ -1,7 +1,9 @@
 .rowAnimal {
-    max-width: 8rem;
     height: 100%;
     background-color: $danger;
+    p{
+        font-size: 1.5rem;
+    }
 }
 
 .rowAnimal:nth-child(odd) {  
