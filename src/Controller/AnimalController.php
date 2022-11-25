@@ -14,10 +14,9 @@ class AnimalController extends AbstractController
         'Leopard Cat',
         'Painted Turtle',
         'Giraffe',
-        'Snake',
-        'kangaroo',
-        'Squirrel',
+        'Flying Squirrel',
     ];
+    
     protected const FLYER = [
         'Mosquito',
         'Sea Eagle',
@@ -33,7 +32,6 @@ class AnimalController extends AbstractController
 
             header('Location: /panier');
         }
-
         $animals = $flyers = [];
 
         $distance = $this->getDistance();
@@ -44,6 +42,7 @@ class AnimalController extends AbstractController
         foreach ($allAnimals as $animal) {
             $animals[] = $this->getCaracteristic($animal, $distance);
         }
+
         foreach (self::FLYER as $flyer) {
             $allFlyers[] = $this->getAnimals($flyer);
         }
@@ -67,36 +66,49 @@ class AnimalController extends AbstractController
     {
         $animalToRent = [];
 
-        $animalImages = $this->getAnimalImage();
-
+        $animalDatas = $this->getAnimalsData();
         foreach ($animals as $animal) {
             $animal['characteristics']['top_speed'] = $animal['characteristics']['top_speed'] ?? '';
             if ($animal['characteristics']['top_speed'] !== '') {
                 $name = $animal['name'];
-                $characteristics = $this->mphToKmh((float)$animal['characteristics']['top_speed']);
+                $speed = (float)$animal['characteristics']['top_speed'] * 0.7;
+                $characteristics = $this->mphToKmh($speed);
                 $time = $this->calculateTime($distance, $characteristics);
                 $_SESSION['time'] = $time;
 
                 $animalToRent[] = [
                     'name' => $name,
                     'speed' => $characteristics,
-                    'time' => $time
+                    'time' => $time,
+
                 ];
             }
-            foreach ($animalImages as $animalImage) {
-                if ($animal['name'] === $animalImage['name']) {
+
+
+            foreach ($animalDatas as $animalData) {
+                if ($animal['name'] === $animalData['name']) {
                     $animalToRent[] = [
-                        'image' => $animalImage['image'],
+                        'image' => $animalData['image'],
+                        'price_rate' => $animalData['price_rate'],
+                        'price' => $this->pricing($animalData['price_rate']),
                     ];
                 }
             }
+
+            $animalToRent = array_merge($animalToRent[0], $animalToRent[1]);
         }
-        $animalToRent = array_merge($animalToRent[0], $animalToRent[1]);
+
         return $animalToRent;
     }
-    public function getAnimalImage()
+
+    public function getAnimalsData()
     {
         $animalManager = new AnimalManager();
         return $animalManager->selectAll();
+    }
+
+    public function pricing($priceRate)
+    {
+        return $priceRate * $this->getDistance();
     }
 }
