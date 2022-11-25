@@ -2,6 +2,8 @@
 
 namespace App\Controller;
 
+use App\Model\AnimalManager;
+
 class CartController extends AbstractController
 {
     /**
@@ -9,10 +11,6 @@ class CartController extends AbstractController
      */
     public function index(): string
     {
-        //var_dump($_SESSION);
-        //exit();
-
-
 
         $x1 = $_SESSION['point1'][0];
         $y1 = $_SESSION['point1'][1];
@@ -25,11 +23,5 @@ class CartController extends AbstractController
             'x2' => $x2,
             'y2' => $y2,
         ]);
-    }
-
-    public function pricing(float $time): float
-    {
-
-        return 0.1;
     }
 }
