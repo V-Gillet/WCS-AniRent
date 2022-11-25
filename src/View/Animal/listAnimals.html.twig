@@ -1,4 +1,4 @@
-{% extends "/layout.html.twig" %}
+{% extends "layout.html.twig" %}
 
 {% block title %}Liste des animaux
 {% endblock %}
@@ -6,30 +6,44 @@
 {% block content %}
 
 	<h1 class="h1 fw-bold text-center my-5 text-secondary">{{'Choisissez votre animal'|upper}}</h1>
-	<div class="container containerAnimal rounded pt-3 pb-5 bg-white">
+	<div class="container containerAnimal rounded py-3 bg-light mb-5">
 
 		{% for animal in animals %}
-			<div class="row mx-3 rowAnimal bg-danger rounded mt-3">
-				<div class="col d-flex"><img class="my-2 me-4 rounded" src="/assets/images/lama.jpeg" alt=""><div class="col align-self-center fw-bold display-4">{{ animal.name|upper }}</div>
+			<div class="row justify-content-between rowAnimal bg-danger rounded m-3 p-2 {{loop.index is odd ? 'bg-valid' : ''}}">
+
+				<div class="col-md-10 col-lg-3 my-2 d-flex justify-content-center align-items-center">
+					<img class="rounded" src="/assets/images/lama.jpeg" class="h-100 w-100" alt="Image d'animaux">
 				</div>
-				<div class="col flex-wrap mt-5 fw-bold fs-3 ms-5">VITESSE :<div class="mt-2">TEMPS :</div>
-					<div class="mt-2">PRIX :</div>
+				<div class="col-md-10 col-lg-2 mb-2 d-flex justify-content-start align-items-center">
+					<h2 class="fw-bold">
+						{{ animal.name|upper }}
+					</h2>
 				</div>
-				<div class="col flex-wrap mt-5 fw-bold fs-3">{{ animal.characteristics }}
-					KM/H
-					<div class="mt-2">{{ animal.time }}</div>
-					<div class="mt-2">{{animal.price}}
-						€</div>
+				<div class="col-md-10 col-lg-4 fw-bold d-flex flex-column justify-content-around">
+					<div class="speed mb-2 d-flex justify-content-around">
+						<p class="m-0">VITESSE :</p>
+						<p class="m-0">{{ animal.speed ?? '_' }}
+							KM/H</p>
+					</div>
+					<div class="time mb-2 d-flex justify-content-around">
+						<p class="m-0">TEMPS :</p>
+						<p class="m-0">{{ animal.time ?? '_' }}
+							Hrs</p>
+					</div>
+					<div class="price mb-2 d-flex justify-content-around">
+						<p class="m-0">PRIX :</p>
+						<p class="m-0">{{animal.price ?? '_'}}
+							€</p>
+					</div>
 				</div>
-				<div class="col-2 rounded-end bg-white m-1">
+				<div class="col-md-10 col-lg-3 my-2 d-flex justify-content-center">
 					<form action="" method="post">
 						<input type="hidden" name="price" value="{{ animal.price ?? 300 }}">
-						<button class="position-relative top-50 start-50 translate-middle fw-bold text-center fs-2" type="submit">Ajouter</button>
+						<button class="btn btn-lg btn-light fw-bold text-secondary fs-2 h-100" type="submit">Sélectionner</button>
 					</form>
 				</div>
-				<span>{{ animal.speed }}</span>
-				<span>{{ animal.time }}</span>
-				<span>{{ distance }}</span>
+
 			</div>
 		{% endfor %}
-	{% endblock %}
+	</div>
+{% endblock %}
