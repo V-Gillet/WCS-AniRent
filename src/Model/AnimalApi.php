@@ -10,7 +10,7 @@ class AnimalApi
     {
         $client = HttpClient::create();
         $response = $client->request('GET', 'https://api.api-ninjas.com/v1/animals?name=' . $animalName, [
-            'headers' => ['X-Api-Key' => 'eR3VDpbLcqcCOXn13DKSmQ==jJFgr2OWbq9Kb8AC']
+            'headers' => ['X-Api-Key' => $GLOBALS['NINJA_ANIMAL_API_KEY']]
         ]);
 
         $statusCode = $response->getStatusCode();
