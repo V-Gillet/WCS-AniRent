@@ -1,3 +1,47 @@
+# Ani Rent
+
+## Context
+
+Ani Rent is the winner student project of a team Hackathon organized by the Wild Code School Orléans. The Hackathon theme was "Travel" and required to use at least one API. It took place from the 24 novembre, 9AM, to the 25 novembre, 2PM, 2022. The teams were made of 4 members
+
+The project is made on a simple PHP MVC structure made by the Wild Code School, wich you'll find more informations about lower on this readme. Here is the link to the repository : https://github.com/WildCodeSchool/simple-mvc.
+
+## Description
+
+Ani Rent is a fictive entreprise which rent mounts to travel with, only in France. It is a quirky and unrealistic idea made to be original for the hackathon so don't expect to be able to mount a mosquito soon :p.
+
+How to navigate :
+
+1. Pick two adresses from France, don't mention the city. Exemple -> adress:'1 rue de l'adresse' postcode:'10000'
+2. Select the mount that you prefer.
+3. Confirm the cart.
+4. Enter your coordinates.
+5. Go to \*/admin to see the list of orders you made.
+
+## Setup
+
+1. Clone the repo.
+2. Follow the steps stated on the Simple MVC readme (or just scroll down to get them).
+3. Enter your API keys to the _config/api_keys.php_ as demonstrated in the _config/api_keys.php.dist_ file.
+4. Start navigate !
+
+## Credits
+
+The API used to create this project are the following :
+
+1. https://api-ninjas.com/api/animals
+2. https://adresse.data.gouv.fr/api-doc/adresse
+3. google maps api
+
+## The team
+
+Kevyn SOLAS : https://github.com/Planger45
+Mickaël GALLÉ : https://github.com/toomanyMG
+Hughes HERTOUT : https://github.com/hhertout
+Valentin GILLET : https://github.com/V-Gillet
+
+---
+
 # Simple MVC
 
 ## Description
@@ -77,4 +121,5 @@ then, run it to open it on your localhot :
 
 ```
 docker run -i -t --name simple-mvc  -p 80:80 simple-mvc-container
+
 ```

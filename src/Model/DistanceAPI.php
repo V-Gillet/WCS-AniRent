@@ -14,7 +14,7 @@ class DistanceAPI
         $y2 = $_SESSION['point2'][1];
 
         $client = HttpClient::create();
-        $response = $client->request('GET', 'https://maps.googleapis.com/maps/api/directions/json?origin=' . $x1 . ',' . $y1 . '&destination=' . $x2 . ',' . $y2 . '&key=AIzaSyCljm3_Bp7F-F-KwWyp_CKdON4MWF9BeDY');
+        $response = $client->request('GET', 'https://maps.googleapis.com/maps/api/directions/json?origin=' . $x1 . ',' . $y1 . '&destination=' . $x2 . ',' . $y2 . '&key=' . $GLOBALS['GOOGLE_API_KEY']);
 
         $content = $response->getContent();
         // $content = '{"id":521583, "name":"symfony-docs", ...}'

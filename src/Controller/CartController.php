@@ -22,7 +22,7 @@ class CartController extends AbstractController
         $name = $_SESSION['name'];
         $time = $_SESSION['time'];
         $image = $_SESSION['image'];
-
+        $googleAPIKey = $GLOBALS['GOOGLE_API_KEY'];
 
         return $this->twig->render('Cart/cart.html.twig', [
             'x1' => $x1,
@@ -33,9 +33,8 @@ class CartController extends AbstractController
             'speed' => $speed,
             'time' => $time,
             'name' => $name,
-            'image' => $image
-
-
+            'image' => $image,
+            'GOOGLE_API_KEY' => $googleAPIKey
         ]);
     }
 }
