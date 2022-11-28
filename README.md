@@ -36,7 +36,7 @@ The API used to create this project are the following :
 ## The team
 
 Kevyn SOLA : https://github.com/Planger45
-Mickaël GALLÉ : https://github.com/toomanyMG
+Mikaël GALLÉ : https://github.com/toomanyMG
 Hughes HERTOUT : https://github.com/hhertout
 Valentin GILLET : https://github.com/V-Gillet
 
